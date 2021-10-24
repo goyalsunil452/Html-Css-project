@@ -1,1 +1,6 @@
 /* Add application styles & imports to this file! */
+
+body{
+    background: linear-gradient(to right,#92dfb5,#92dfd1,#f1e3cd) ;
+    margin-top: 70px;
+}

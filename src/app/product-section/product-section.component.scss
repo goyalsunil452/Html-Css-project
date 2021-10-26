@@ -1,0 +1,181 @@
+.container{
+    margin-bottom: 200px;
+    .products{
+        margin:90px auto;
+        text-align: center;
+        h1{
+            font-family: sans-serif;
+            letter-spacing: 1px;
+        }
+        h1:after{
+           content: '';
+           background: white;
+           display: block;
+           width: 160px;
+           height: 3px;
+           margin: 5px auto;
+        }
+        h1:hover{
+            color: rgb(241, 199, 194);
+            cursor: pointer;
+        }
+    }
+    .search{
+        .form-box{
+            display: flex;
+            justify-content: center;
+            background: rgba(255,255,255,0.2);
+            padding: 20px 40px;
+            .search-field{
+                height: 50px;
+                padding: 10px;
+                outline: none;
+            }
+            .search{
+                width: 400px;
+            }
+            .location{
+                width: 200px;
+            }
+            .search-btn{
+                height:50px;
+                width: 150px;
+                background: #f44336;
+                color: #fff;
+                border:none;
+                outline: none;
+                transition: 0.8s;
+                position: relative;
+                &:hover{
+                  background: #bb0d00;
+                  cursor: pointer;
+                }
+          
+            }
+
+        }
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        div{
+            flex:1;
+            width: 200px;
+        }
+        .icons{
+            font-size: 40px;
+            margin: 20px auto;
+            padding: 20px;
+            height: 80px;
+            width: 80px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+        .col-md-3:hover{
+            box-shadow: 5px 7px 9px -3px rgba(255,255,255,0.5);
+            cursor: pointer;
+        }
+    }    
+}
+.btn{
+    border:1px solid#3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 0px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: "";
+        position:absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: #3498db;
+        z-index: -1;
+        transition: 0.8s;
+    }
+}
+.btn1,.btn2{
+    color: #3498db; 
+    &:hover{
+        color: #fff; 
+    }
+    &::before{
+        top:0;
+        border-radius: 0 0 50% 50%;
+    }
+    &:hover::before{
+        height: 180%;
+    }
+}
+.btn3,.btn4{
+    color: #fff; 
+    &:hover{
+        color: #3498db; 
+    }
+    &::before{
+        bottom:0;
+        border-radius: 50% 50% 0 0;
+        height: 180%;
+    }
+    &:hover::before{
+        height: 0%;
+    }
+}
+@media screen and (max-width: 600px){
+    .container{
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+        .search{
+            .form-box{
+                display: flex;
+                justify-content: center;
+                background: rgba(255,255,255,0.2);
+                padding: 5px 10px;
+                .search-field{
+                    height: 10px;
+                    outline: none;
+                }
+                .search{
+                    height: 10px;
+                    width: 100px;
+                }
+                .location{
+                    height: 10px;
+                    width: 100px;
+                }
+                .search-btn{
+                    height:24px;
+                    width: 100px;
+                    background: #f44336;
+                    color: #fff;
+                    border:none;
+                    outline: none;
+                    transition: 0.8s;
+                    position: relative;
+                    &:hover{
+                      background: #bb0d00;
+                      cursor: pointer;
+                    }
+              
+                }
+            }
+        }
+
+      }
+      
+    .row{
+        display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .row > div{
+      flex:1 1 50%;
+  /*     background-color: #fff; */
+      text-align: center;
+    }
+  }

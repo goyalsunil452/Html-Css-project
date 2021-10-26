@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { FlexCssComponent } from './flex-css/flex-css.component';
+import { ProductSectionComponent } from './product-section/product-section.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, RegistrationComponent, FlexCssComponent ],
+  declarations: [ AppComponent, HelloComponent, RegistrationComponent, FlexCssComponent, ProductSectionComponent, HeaderComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
